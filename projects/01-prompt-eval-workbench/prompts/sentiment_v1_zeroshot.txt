@@ -1,0 +1,4 @@
+Analyze the following customer review and tell me the sentiment:
+
+Customer Review:
+"{customer_review}"

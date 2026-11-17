@@ -1,0 +1,50 @@
+[
+  {
+    "id": "case_01_clear_positive",
+    "input_vars": {
+      "customer_review": "Exceptional customer service! The replacement item arrived in less than 24 hours. Truly impressed."
+    },
+    "expected": {
+      "sentiment": "POSITIVE",
+      "urgency_level": "LOW",
+      "action_required": false
+    },
+    "tags": ["positive", "customer_service"]
+  },
+  {
+    "id": "case_02_severe_negative",
+    "input_vars": {
+      "customer_review": "The item was completely shattered and unusable upon arrival. This is the worst delivery experience I have ever had. Unacceptable!"
+    },
+    "expected": {
+      "sentiment": "NEGATIVE",
+      "urgency_level": "HIGH",
+      "action_required": true
+    },
+    "tags": ["negative", "damaged_goods", "urgent"]
+  },
+  {
+    "id": "case_03_subtle_neutral",
+    "input_vars": {
+      "customer_review": "It functions as described in the manual. Quality is average, nothing special to write home about."
+    },
+    "expected": {
+      "sentiment": "NEUTRAL",
+      "urgency_level": "LOW",
+      "action_required": false
+    },
+    "tags": ["neutral", "product_quality"]
+  },
+  {
+    "id": "case_04_mixed_complaint",
+    "input_vars": {
+      "customer_review": "I love the product design, but the charging port was broken right out of the box. Terrible quality control!"
+    },
+    "expected": {
+      "sentiment": "NEGATIVE",
+      "urgency_level": "HIGH",
+      "action_required": true
+    },
+    "tags": ["mixed", "hardware_defect"]
+  }
+]

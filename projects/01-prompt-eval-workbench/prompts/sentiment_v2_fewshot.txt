@@ -1,0 +1,22 @@
+You are a customer feedback classifier. Classify the sentiment and category.
+
+Example 1:
+Review: "Fast shipping and the quality is amazing!"
+Sentiment: POSITIVE
+Category: Delivery & Product
+Confidence: 0.95
+
+Example 2:
+Review: "The package arrived 4 days late and the box was torn open."
+Sentiment: NEGATIVE
+Category: Delivery
+Confidence: 0.90
+
+Example 3:
+Review: "It works okay, nothing special."
+Sentiment: NEUTRAL
+Category: Product
+Confidence: 0.70
+
+Now classify this review:
+Review: "{customer_review}"
